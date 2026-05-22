@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +9,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600;700&display=swap');
-        
-        :root { scroll-behavior: smooth; }
-        body { font-family: 'Poppins', sans-serif; background-color: #ffffff; }
-        .font-serif { font-family: 'Playfair Display', serif; }
+
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
 
         /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #ea580c; border-radius: 10px; }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ea580c;
+            border-radius: 10px;
+        }
 
         /* Animations */
         @keyframes reveal {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        .reveal { animation: reveal 1s ease-out forwards; }
-        
-        .menu-card:hover .buy-btn { transform: translateY(0); opacity: 1; }
-        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
+
+        .reveal {
+            animation: reveal 1s ease-out forwards;
+        }
+
+        .menu-card:hover .buy-btn {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
     </style>
 </head>
+
 <body class="text-gray-900 overflow-x-hidden">
 
     <nav class="fixed w-full z-[100] glass border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-orange-600 tracking-tighter italic">Flavor<span class="text-black">Fusion.</span></h1>
+            <h1 class="text-3xl font-bold text-orange-600 tracking-tighter italic">Flavor<span
+                    class="text-black">Fusion.</span></h1>
             <div class="hidden md:flex space-x-10 font-medium text-sm uppercase tracking-widest">
                 <a href="#" class="hover:text-orange-600 transition-colors">Home</a>
                 <a href="#services" class="hover:text-orange-600 transition-colors">Services</a>
@@ -42,24 +80,34 @@
             </div>
             <button onclick="toggleCart()" class="relative p-2 hover:bg-orange-50 rounded-full transition">
                 <i class="fa-solid fa-bag-shopping text-2xl text-gray-800"></i>
-                <span id="cart-count" class="absolute top-0 right-0 bg-orange-600 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">0</span>
+                <span id="cart-count"
+                    class="absolute top-0 right-0 bg-orange-600 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">0</span>
             </button>
         </div>
     </nav>
 
     <section class="relative h-screen flex items-center justify-center bg-black">
         <div class="absolute inset-0 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover opacity-60 scale-105" alt="Hero">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=2000"
+                class="w-full h-full object-cover opacity-60 scale-105" alt="Hero">
             <div class="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
             <div class="max-w-3xl reveal">
-                <span class="inline-block px-4 py-1 mb-6 border border-orange-500 text-orange-500 rounded-full text-xs font-bold uppercase tracking-widest">Since 1998</span>
-                <h2 class="text-7xl md:text-9xl font-serif text-white leading-none mb-8">Art on <br><span class="text-orange-600 italic">Your Plate.</span></h2>
-                <p class="text-gray-300 text-xl mb-10 font-light leading-relaxed">Experience a symphony of flavors where every ingredient is a masterpiece. Fine dining redefined for the modern connoisseur.</p>
+                <span
+                    class="inline-block px-4 py-1 mb-6 border border-orange-500 text-orange-500 rounded-full text-xs font-bold uppercase tracking-widest">Since
+                    1998</span>
+                <h2 class="text-7xl md:text-9xl font-serif text-white leading-none mb-8">Art on <br><span
+                        class="text-orange-600 italic">Your Plate.</span></h2>
+                <p class="text-gray-300 text-xl mb-10 font-light leading-relaxed">Experience a symphony of flavors where
+                    every ingredient is a masterpiece. Fine dining redefined for the modern connoisseur.</p>
                 <div class="flex flex-wrap gap-6">
-                    <a href="#menu" class="bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold transition shadow-2xl shadow-orange-600/40">Explore Menu</a>
-                    <a href="#contact" class="px-10 py-5 rounded-full font-bold text-white border border-white/30 hover:bg-white hover:text-black transition">Book a Table</a>
+                    <a href="#menu"
+                        class="bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-full font-bold transition shadow-2xl shadow-orange-600/40">Explore
+                        Menu</a>
+                    <a href="#contact"
+                        class="px-10 py-5 rounded-full font-bold text-white border border-white/30 hover:bg-white hover:text-black transition">Book
+                        a Table</a>
                 </div>
             </div>
         </div>
@@ -94,12 +142,15 @@
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="grid lg:grid-cols-2 gap-20 items-center">
                 <div>
-                    <h2 class="text-6xl font-serif font-bold mb-8 italic">Let's Talk <br><span class="text-orange-600">Flavor.</span></h2>
-                    <p class="text-gray-400 mb-12 text-lg">Whether it's a private dinner or a grand celebration, we're here to make it unforgettable.</p>
-                    
+                    <h2 class="text-6xl font-serif font-bold mb-8 italic">Let's Talk <br><span
+                            class="text-orange-600">Flavor.</span></h2>
+                    <p class="text-gray-400 mb-12 text-lg">Whether it's a private dinner or a grand celebration, we're
+                        here to make it unforgettable.</p>
+
                     <div class="space-y-8">
                         <div class="flex items-center gap-6 group">
-                            <div class="w-14 h-14 rounded-2xl bg-orange-600/10 flex items-center justify-center border border-orange-600/20 group-hover:bg-orange-600 transition-all duration-500">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-orange-600/10 flex items-center justify-center border border-orange-600/20 group-hover:bg-orange-600 transition-all duration-500">
                                 <i class="fa-solid fa-location-arrow text-orange-500 group-hover:text-white"></i>
                             </div>
                             <div>
@@ -108,7 +159,8 @@
                             </div>
                         </div>
                         <div class="flex items-center gap-6 group">
-                            <div class="w-14 h-14 rounded-2xl bg-orange-600/10 flex items-center justify-center border border-orange-600/20 group-hover:bg-orange-600 transition-all duration-500">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-orange-600/10 flex items-center justify-center border border-orange-600/20 group-hover:bg-orange-600 transition-all duration-500">
                                 <i class="fa-solid fa-phone-volume text-orange-500 group-hover:text-white"></i>
                             </div>
                             <div>
@@ -122,21 +174,28 @@
                 <div class="bg-white/5 p-10 rounded-[3rem] border border-white/10 backdrop-blur-xl">
                     <form class="space-y-6">
                         <div class="grid md:grid-cols-2 gap-6">
-                            <input type="text" placeholder="Your Name" class="bg-transparent border-b border-white/20 py-4 focus:border-orange-600 outline-none transition w-full">
-                            <input type="email" placeholder="Email Address" class="bg-transparent border-b border-white/20 py-4 focus:border-orange-600 outline-none transition w-full">
+                            <input type="text" placeholder="Your Name"
+                                class="bg-transparent border-b border-white/20 py-4 focus:border-orange-600 outline-none transition w-full">
+                            <input type="email" placeholder="Email Address"
+                                class="bg-transparent border-b border-white/20 py-4 focus:border-orange-600 outline-none transition w-full">
                         </div>
-                        <textarea placeholder="Tell us about your event..." rows="4" class="bg-transparent border-b border-white/20 py-4 focus:border-orange-600 outline-none transition w-full"></textarea>
-                        <button class="w-full bg-orange-600 hover:bg-orange-700 py-5 rounded-2xl font-bold tracking-widest uppercase text-sm transition shadow-xl shadow-orange-600/20">Send Inquiry</button>
+                        <textarea placeholder="Tell us about your event..." rows="4"
+                            class="bg-transparent border-b border-white/20 py-4 focus:border-orange-600 outline-none transition w-full"></textarea>
+                        <button
+                            class="w-full bg-orange-600 hover:bg-orange-700 py-5 rounded-2xl font-bold tracking-widest uppercase text-sm transition shadow-xl shadow-orange-600/20">Send
+                            Inquiry</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full sm:w-[450px] bg-white z-[200] shadow-[-20px_0_50px_rgba(0,0,0,0.1)] translate-x-full transition-transform duration-700 flex flex-col">
+    <div id="cart-sidebar"
+        class="fixed top-0 right-0 h-full w-full sm:w-[450px] bg-white z-[200] shadow-[-20px_0_50px_rgba(0,0,0,0.1)] translate-x-full transition-transform duration-700 flex flex-col">
         <div class="p-8 border-b flex justify-between items-center">
             <h3 class="text-2xl font-serif font-bold italic">Your Selection</h3>
-            <button onclick="toggleCart()" class="text-gray-400 hover:text-black transition"><i class="fa-solid fa-xmark text-2xl"></i></button>
+            <button onclick="toggleCart()" class="text-gray-400 hover:text-black transition"><i
+                    class="fa-solid fa-xmark text-2xl"></i></button>
         </div>
         <div id="cart-items" class="flex-grow overflow-y-auto p-8 space-y-6"></div>
         <div class="p-8 bg-gray-50 border-t">
@@ -144,19 +203,27 @@
                 <span class="text-gray-500 font-medium">Estimated Total</span>
                 <span id="total-price" class="text-3xl font-bold text-orange-600">$0.00</span>
             </div>
-            <button class="w-full bg-black text-white py-6 rounded-2xl font-bold hover:bg-orange-600 transition shadow-xl">Complete Reservation</button>
+            <button
+                class="w-full bg-black text-white py-6 rounded-2xl font-bold hover:bg-orange-600 transition shadow-xl">Complete
+                Reservation</button>
         </div>
     </div>
-    <div id="overlay" class="fixed inset-0 bg-black/60 z-[150] hidden backdrop-blur-sm transition-opacity duration-500" onclick="toggleCart()"></div>
+    <div id="overlay" class="fixed inset-0 bg-black/60 z-[150] hidden backdrop-blur-sm transition-opacity duration-500"
+        onclick="toggleCart()"></div>
 
     <footer class="bg-white py-20 border-t">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
             <div class="col-span-2">
                 <h1 class="text-4xl font-bold text-orange-600 italic mb-6">FlavorFusion.</h1>
-                <p class="text-gray-500 max-w-sm mb-8 leading-relaxed">Redefining the art of dining through innovation, passion, and the finest ingredients since 1998.</p>
+                <p class="text-gray-500 max-w-sm mb-8 leading-relaxed">Redefining the art of dining through innovation,
+                    passion, and the finest ingredients since 1998.</p>
                 <div class="flex space-x-6">
-                    <a href="#" class="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-orange-600 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-orange-600 hover:text-white transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-orange-600 hover:text-white transition"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-orange-600 hover:text-white transition"><i
+                            class="fa-brands fa-facebook-f"></i></a>
                 </div>
             </div>
             <div>
@@ -176,9 +243,11 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-6 pt-20 text-center">
-            <p class="text-gray-400 text-[10px] tracking-[0.4em] uppercase border-t pt-10">© 2026 FlavorFusion Restaurant Group | All Rights Reserved</p>
+            <p class="text-gray-400 text-[10px] tracking-[0.4em] uppercase border-t pt-10">© 2026 FlavorFusion
+                Restaurant Group | All Rights Reserved. Designed & Developed By Nasrin Akter</p>
         </div>
     </footer>
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
