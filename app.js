@@ -2,9 +2,9 @@ const menuItems = [
     { id: 1, name: "Wagyu Gold Burger", price: 24.99, img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800", desc: "Aged Wagyu, truffle mayo, gold-leaf bun." },
     { id: 2, name: "Truffle Burrata Pizza", price: 21.50, img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800", desc: "Italian burrata, fresh truffles, forest mushrooms." },
     { id: 3, name: "Lobster Ravioli", price: 29.20, img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800", desc: "Hand-rolled pasta, Atlantic lobster, saffron cream." },
-    { id: 4, name: "Saffron Risotto", price: 18.99, img: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800", desc: "Carnaroli rice, Persian saffron, 24-month parmesan." },
+    { id: 4, name: "Saffron Risotto", price: 18.99, img: "https://images.pexels.com/photos/16743486/pexels-photo-16743486.jpeg", desc: "Carnaroli rice, Persian saffron, 24-month parmesan." },
     { id: 5, name: "Herb Roasted Duck", price: 34.00, img: "https://images.pexels.com/photos/29333558/pexels-photo-29333558.jpeg", desc: "Dry-aged duck, orange reduction, rosemary glaze." },
-    { id: 6, name: "Velvet Mousse", price: 12.50, img: "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=800", desc: "Dark Belgian chocolate, gold dust, raspberry core." }
+    { id: 6, name: "Velvet Mousse", price: 12.50, img: "https://images.pexels.com/photos/18784853/pexels-photo-18784853.jpeg", desc: "Dark Belgian chocolate, gold dust, raspberry core." }
 ];
 
 const services = [
